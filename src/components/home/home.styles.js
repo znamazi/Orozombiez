@@ -661,6 +661,9 @@ export const HomeBenefitsItemBottomSpan = styled.span`
 export const HomeRoadmap = styled.div`
   overflow: hidden;
   background-color: #ef3f89;
+  @media (max-width: 992px) {
+    padding: 0;
+  }
 `
 
 export const HomeRoadmapContent = styled.div`
@@ -671,18 +674,38 @@ export const HomeRoadmapContent = styled.div`
   width: 100%;
   display: flex;
   position: relative;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+  }
 `
 
 export const HomeRoadmapIllu = styled.div`
   width: 43%;
   height: 100%;
   position: absolute;
+
+  @media (max-width: 992px) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+    margin-right: 0;
+    padding: 25px 0;
+  }
 `
 export const HomeRoadmapInfo = styled.div`
   align-items: flex-end;
   flex-direction: column;
   width: 100%;
   display: flex;
+  @media (max-width: 992px) {
+    padding: 0 30px;
+  }
 `
 
 export const HomeRoadmapInfoTitle = styled.h3`
