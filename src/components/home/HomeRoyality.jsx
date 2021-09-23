@@ -19,7 +19,7 @@ const HomeRoyalityComponent = () => {
         <HomeRoyaltyContent>
           <HomeRoyaltyIllu>
             <picture>
-              <source srcset="media/img/content/home/royalty-illu.webp" />
+              <source srcSet="media/img/content/home/royalty-illu.webp" />
               <Image src="media/img/content/home/royalty-illu.jpg" />
             </picture>
           </HomeRoyaltyIllu>

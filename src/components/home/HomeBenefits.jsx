@@ -28,7 +28,7 @@ const HomeBenefitsComponent = () => {
             <HomeBenefitsItem>
               <HomeBenefitsItemTop>
                 <picture>
-                  <source srcset="media/img/content/benefits-piggy.webp" />
+                  <source srcSet="media/img/content/benefits-piggy.webp" />
                   <Image src="media/img/content/benefits-piggy.png" />
                 </picture>
               </HomeBenefitsItemTop>

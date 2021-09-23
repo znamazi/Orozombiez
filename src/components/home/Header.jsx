@@ -39,8 +39,8 @@ const Header = (props) => {
       )
     } else {
       return (
-        <Link to={item.to} spy={true} smooth={true}>
-          <MenuItem onClick={() => setBurger(false)} key={item.name}>
+        <Link to={item.to} spy={true} smooth={true} key={item.name}>
+          <MenuItem onClick={() => setBurger(false)}>
             <MenuLabel>{item.name}</MenuLabel>
           </MenuItem>
         </Link>

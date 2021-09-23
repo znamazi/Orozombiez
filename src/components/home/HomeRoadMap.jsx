@@ -21,11 +21,11 @@ const HomeRoadMapComponent = () => {
           <HomeRoadmapIllu>
             <picture>
               <source
-                srcset="media/img/svg/roadmap.svg"
+                srcSet="media/img/svg/roadmap.svg"
                 media="(min-width:993px)"
               />
               <source
-                srcset="media/img/svg/roadmap-mobile.svg"
+                srcSet="media/img/svg/roadmap-mobile.svg"
                 media="(max-width:992px)"
               />
               <Image src="media/img/svg/roadmap.webp" />
