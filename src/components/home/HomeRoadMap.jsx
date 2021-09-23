@@ -36,51 +36,30 @@ const HomeRoadMapComponent = () => {
               <HomeRoadmapInfoTitle>Roadmap</HomeRoadmapInfoTitle>
               <HomeRoadmapInfoText>
                 <HomeRoadmapInfoTextP>
-                  20% sold: We give away 6 rare Devils (top 10% rarity) to
-                  random holders
+                  • We will create an interactive, and dynamic huge community
+                  together.
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  40% sold: We fund our community wallet with 6.66 ETH
+                  • 80% sold: We fund the OZ wallet with 80 SOL
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  60% sold: 10 super-rare Devils (top 6% rarity) will be
-                  airdropped to random holders with 6 or more Devils
+                  • 100% sold: We fund the OZ wallet with a total of 100 SOL.
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  80% sold: Sending out 66 physical devil sculptures to random
-                  holders
+                  • With these proceeds we will purchase, and sell NFTs. Holders
+                  vote on what to invest in. Profits will be shared among all
+                  holders and is claimed through our OZ’s Wallet.
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  100% sold: We fund the community wallet with a total of 66.6
-                  ETH.
+                  • We launch a merch store exclusively for Zombie holders with
+                  Limited edition
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  We launch a merch store exclusively for Devil Holders with
-                  Limited Edition Merch.
+                  • We will announce free to mint Baby OZs to all Holders. These
+                  might get airdropped. We will keep the community updated.
                 </HomeRoadmapInfoTextP>
                 <HomeRoadmapInfoTextP>
-                  We launch our Hell's Kitchen. Click{' '}
-                  <a class="header-list__link text-36px" href="kitchen">
-                    here
-                  </a>{' '}
-                  to check it out!
-                </HomeRoadmapInfoTextP>
-                <HomeRoadmapInfoTextP>
-                  We announce the Free-To-Mint Devil Companions (Baby-Devils?
-                  Hell-Hounds? Who knows?).
-                </HomeRoadmapInfoTextP>
-                <HomeRoadmapInfoTextP>
-                  We will start a HUGE Community NFT Collection!
-                </HomeRoadmapInfoTextP>
-                <HomeRoadmapInfoTextP>
-                  We will buy Punks, Apes, CoolCats &amp; whatever you want!
-                  Holders can decide on what to purchase &amp; what offers to
-                  accept! Profit will be shared among all holders and is
-                  claimable through our "Hell's Piggy Bank".
-                </HomeRoadmapInfoTextP>
-                <HomeRoadmapInfoTextP>
-                  We donate 10 ETH to charity organisations, the community can
-                  decide which one it will be.
+                  • A trailer will be released for the upcoming game.
                 </HomeRoadmapInfoTextP>
               </HomeRoadmapInfoText>
             </Flex>

@@ -14,7 +14,7 @@ const Footer = () => {
     <FooterWrap>
       <CustomWrapper>
         <FooterContent>
-          <Copyright>© 2021 SympathyForTheDevils</Copyright>
+          <Copyright>© 2021 Orozombiez</Copyright>
           <SocialWrap>
             <SocialItem href="https://twitter.com/SFTD_ART" target="_blank">
               <Image src="media/img/svg/footer-twitter.svg" />

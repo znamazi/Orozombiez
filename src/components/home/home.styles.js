@@ -181,7 +181,7 @@ export const HomeHeroContent = styled.div`
   z-index: 2;
   position: relative;
   @media (max-width: 1500px) {
-    top: -50px;
+    top: 38px;
   }
   @media (max-width: 576px) {
     padding-top: 50px;
@@ -220,20 +220,21 @@ export const Title = styled.h1`
 export const SubTitle = styled.p`
   max-width: 1600px;
   color: #fff;
-  background: #9054e6;
+  background: ${(p) => (p.background ? p.background : 'transparent')};
   text-shadow: 0 0 8px rgb(0 0 0 / 43%);
-  font-size: 38px;
+  font-size: 25px;
   text-align: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-bottom: 4rem;
+  padding: 30px;
   @media (max-width: 992px) {
-    font-size: 30px;
+    font-size: 18px;
     line-height: 36px;
     max-width: 700px;
   }
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 15px;
     line-height: 26px;
     margin-bottom: 30px;
   }
@@ -302,10 +303,11 @@ export const HomeMembership = styled.div`
   padding-bottom: 20px;
   background-color: #f1572a;
   position: relative;
+  margin-top: 30px;
 `
 export const Cloud = styled.div`
   z-index: 1;
-  top: -225px;
+  top: -200px;
   width: 100%;
   height: 305px;
   background: url(media/img/svg/membership-clouds.svg) no-repeat center;
@@ -350,6 +352,9 @@ export const HomeMembershipIllu = styled.div`
 export const HomeMembershipText = styled.p`
   color: #fff;
   font-size: 26px;
+  margin-bottom: 30px;
+  padding: ${(p) => p.padding};
+  text-align: justify;
   @media (max-width: 1200px) {
     font-size: 28px;
     line-height: 40px;
@@ -487,11 +492,11 @@ export const HomeAsksTitle = styled.div`
 export const HomeAsksSpan = styled.span`
   z-index: 2;
   text-align: center;
-  font-size: 38px;
-  margin-bottom: 3rem;
+  font-size: 55px;
+  margin-bottom: 65px;
   @media (max-width: 1450px) {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 50px;
+    margin-bottom: 65px;
   }
   @media (max-width: 992px) {
     font-size: 22px;
@@ -542,6 +547,9 @@ export const HomeAsksInfoList = styled.ul`
   margin-bottom: 3rem;
 `
 export const HomeAsksInfoItem = styled.li`
+  max-width: ${(p) => p.maxWidth};
+  text-align: center;
+  margin: ${(p) => p.margin};
   text-indent: 55px;
   color: #fff;
   font-size: 26px;

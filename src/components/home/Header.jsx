@@ -11,8 +11,26 @@ import {
   MenuLabel
 } from './home.styles'
 import { Link } from 'react-scroll'
+import menuItems from '../../constants/menu'
 
 const Header = (props) => {
+  const menuItemsJsx = menuItems.map((item) => {
+    if (item.link) {
+      return (
+        <MenuItem>
+          <MenuLabel>{item.name}</MenuLabel>
+        </MenuItem>
+      )
+    } else {
+      return (
+        <Link to={item.to} spy={true} smooth={true}>
+          <MenuItem>
+            <MenuLabel>{item.name}</MenuLabel>
+          </MenuItem>
+        </Link>
+      )
+    }
+  })
   return (
     <HeaderWrap>
       <CustomWrapper>
@@ -21,30 +39,7 @@ const Header = (props) => {
             <Image src="media/img/svg/logo-svg.svg" />
           </Logo>
           <Nav>
-            <Menu>
-              <MenuItem>
-                <MenuLabel>Home</MenuLabel>
-              </MenuItem>
-              <Link to="membership" spy={true} smooth={true}>
-                <MenuItem>
-                  <MenuLabel>Membership</MenuLabel>
-                </MenuItem>
-              </Link>
-              <Link to="roadmap" spy={true} smooth={true}>
-                <MenuItem>
-                  <MenuLabel>Roadmap</MenuLabel>
-                </MenuItem>
-              </Link>
-              <MenuItem>
-                <MenuLabel>Hell’s Kitchen</MenuLabel>
-              </MenuItem>
-              <MenuItem>
-                <MenuLabel>Hell’s Piggy Bank</MenuLabel>
-              </MenuItem>
-              <MenuItem>
-                <MenuLabel>Minting</MenuLabel>
-              </MenuItem>
-            </Menu>
+            <Menu>{menuItemsJsx}</Menu>
           </Nav>
         </HeaderContent>
       </CustomWrapper>

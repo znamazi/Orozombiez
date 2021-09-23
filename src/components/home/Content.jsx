@@ -14,12 +14,15 @@ const Content = (props) => {
     <Main>
       <HomeWrap>
         <HomeHero {...props} />
-        <div id="membership">
+        <div id="members">
           <HomeMembership />
         </div>
         {/* <HomeMinting /> */}
         <HomeRoyality />
-        <HomeAsks />
+        <div id="faq">
+          <HomeAsks />
+        </div>
+
         <HomeBenefits />
         <div id="roadmap">
           <HomeRoadMap />

@@ -147,13 +147,17 @@ const HomeHeroComponent = (props) => {
   return (
     <HomeHero>
       <HomeHeroContent>
-        <Title>
-          Welcome to
+        <Title>Welcome to Orozombiez!</Title>
+
+        <SubTitle background="#9054e6">
+          Join the Orozombiez and be a part of history and a great dynamic, and
+          growing community with fantastic perks to come. The Zombie you own
+          will grant you access to members only benefits and features.
           <br />
-          Sympathy For The Devils
-        </Title>
-        <SubTitle>
-          Your Ticket to hell and the Fabulous & unique Devils Club.
+          Orozombiez NFTs are generative and incontrovertibly rare and unique
+          artworks limited to a total of 10,000 generated from more than 200
+          different attributes and traits. 500 of them will be reserved for
+          giveaways and airdrops.
         </SubTitle>
         {!wallet.connected ? (
           <BtnWallet>

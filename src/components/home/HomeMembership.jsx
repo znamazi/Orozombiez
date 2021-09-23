@@ -7,7 +7,8 @@ import {
   HomeMembershipContent,
   HomeMembershipIllu,
   Image,
-  HomeMembershipText
+  HomeMembershipText,
+  Flex
 } from './home.styles'
 
 const HomeMembershipComponent = () => {
@@ -24,11 +25,18 @@ const HomeMembershipComponent = () => {
           <HomeMembershipIllu>
             <Image src="media/img/svg/logo-white.svg" />
           </HomeMembershipIllu>
-          <HomeMembershipText>
-            Join the Devil‘s Club and be part of a great movement and an awesome
-            & strong Community with amazing Things to come.Your Devil NFT will
-            grant you access to Members Only Benefits and Features!
-          </HomeMembershipText>
+          <Flex flexDirection="column">
+            <HomeMembershipText>
+              Holders of our Orozombiez NFTs will get rewarded with passive
+              income. We have set our royalties to 4.5%, and 2.5%
+              marketplace fee, with a total of 7%.
+            </HomeMembershipText>
+            <HomeMembershipText padding="20px 40px">
+              • 3% will be distributed to all holders. The more Zombiez you own,
+              the bigger your share. Holders can claim their rewards every
+              month.
+            </HomeMembershipText>
+          </Flex>
         </HomeMembershipContent>
       </CustomWrapper>
     </HomeMembership>
