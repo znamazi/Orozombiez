@@ -496,6 +496,7 @@ export const HomeRoyaltyIllu = styled.div`
 export const HomeRoyaltyText = styled.span`
   color: #ffffff;
   font-size: 26px;
+  padding-bottom: 30px;
   @media (max-width: 1200px) {
     font-size: 28px;
   }
@@ -507,8 +508,8 @@ export const HomeRoyaltyText = styled.span`
 `
 export const HomeRoyaltyDiff = styled.span`
   color: #f9e235;
-  font-size: 26px;
-  text-decoration: underline;
+  font-size: 35px;
+  padding-bottom: 35px;
 `
 
 export const HomeAsks = styled.div`

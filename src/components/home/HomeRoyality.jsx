@@ -8,7 +8,8 @@ import {
   HomeRoyaltyText,
   HomeRoyaltyDiff,
   Wrap,
-  HomeRoyaltyIllu
+  HomeRoyaltyIllu,
+  Flex
 } from './home.styles'
 
 const HomeRoyalityComponent = () => {
@@ -23,22 +24,18 @@ const HomeRoyalityComponent = () => {
             </picture>
           </HomeRoyaltyIllu>
 
-          <Wrap>
+          <Flex flexDirection="column">
+            <HomeRoyaltyDiff>Charitable Donations </HomeRoyaltyDiff>
             <HomeRoyaltyText>
-              Sympathy For The Devils NFTs are generative and provably rare &
-              unique artworks limited to a total amount of 6666 generated from
-              160+ different attributes/traits. 2 x 66 of them will be reserved
-              for giveaways & airdrops. Minting cost will be 0.0666 ETH + Gas.
-              BUT the best thing comes now:
+              • We will donate $5,000 to a charity of choice by the holders.
             </HomeRoyaltyText>
-            <HomeRoyaltyDiff>
-              Holders of our Devil NFTs will get rewarded with passive income!!
-            </HomeRoyaltyDiff>
+
             <HomeRoyaltyText>
-              We decided to set our royalties to 4.16% (+2.5% opensea fee), so
-              we have a total sales fee of 6.66%.
+              • We will work with another charitable organization to supply and
+              ship educational books and school supplies to underprivileged
+              children in Africa.
             </HomeRoyaltyText>
-          </Wrap>
+          </Flex>
         </HomeRoyaltyContent>
       </CustomWrapper>
     </HomeRoyalty>
