@@ -304,6 +304,9 @@ export const HomeMembership = styled.div`
   background-color: #f1572a;
   position: relative;
   margin-top: 30px;
+  @media (max-width: 992px) {
+    margin-top: 120px;
+  }
 `
 export const Cloud = styled.div`
   z-index: 1;
