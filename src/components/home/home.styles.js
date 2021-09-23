@@ -36,7 +36,7 @@ export const Flex = styled.div`
 `
 // ------------------------ Header -------------------------
 
-export const HeaderWrap = styled.div`
+export const HeaderWrap = styled.header`
   position: absolute;
   top: 0;
   left: 0;
@@ -78,8 +78,8 @@ export const Nav = styled.nav`
     height: 100%;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: ${(p) => `translateX(${p.transform}%)`};
+    transform: ${(p) => `translateX(${p.transform}%)`};
     background-color: #fff;
   }
 `
@@ -104,24 +104,69 @@ export const Menu = styled.ul`
     -ms-flex-pack: center;
     justify-content: center;
   }
+  @media (max-height: 500px) {
+    -webkit-box-pack: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
+  }
 `
 export const MenuItem = styled.li`
   list-style-type: none;
   @media (max-width: 992px) {
-    &:not(:last-child) {
-      margin-bottom: 70px;
-    }
+    margin: 30px;
   }
 `
-export const MenuLabel = styled.a`
+export const MenuLabel = styled.span`
   font-size: 24px;
   color: #000000;
-  &:hover {
-    text-decoration: none;
-  }
+
   @media (max-width: 992px) {
+    font-size: 55px;
   }
 `
+
+export const BurgerBtn = styled.button`
+  position: relative;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  cursor: pointer;
+  @media (min-width: 993px) {
+    display: none;
+  }
+`
+
+export const BurgerContainer = styled.span`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 22px;
+  margin: auto;
+}`
+
+export const BurgerBtnSpan = styled.span`
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 5px;
+  -webkit-transition: all .2s cubic-bezier(.1,.82,.76,.965);
+  transition: all .2s cubic-bezier(.1,.82,.76,.965);
+  border-radius: 5px;
+  background-color: var(--bar-bg, #000);
+  ${(p) =>
+    p.active
+      ? '  &:last-of-type {bottom: 8.5px;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}'
+      : '  &:last-of-type {bottom: 0;}'}
+  ${(p) =>
+    p.active
+      ? ' &:first-of-type { top: 8.5px;-webkit-transform: rotate(45deg);transform: rotate(45deg);}'
+      : '&:first-of-type {top: 0;}'}
+ }`
 
 // ------------------------ Content ------------------------
 export const HomeWrap = styled.div``
@@ -791,7 +836,7 @@ export const HomeRoadmapInfoTextP = styled.p`
 `
 
 // ------------------------ Footer -------------------------
-export const FooterWrap = styled.div`
+export const FooterWrap = styled.footer`
   padding: 50px 0;
 `
 
