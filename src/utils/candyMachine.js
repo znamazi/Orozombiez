@@ -211,19 +211,14 @@ export const mintOneToken = async (
   treasury
 ) => {
   const mint = anchor.web3.Keypair.generate()
-  console.log({ mint })
   const token = await getTokenWallet(payer, mint.publicKey)
-  console.log({ token })
   const { connection, program } = candyMachine
   const metadata = await getMetadata(mint.publicKey)
-  console.log({ metadata })
   const masterEdition = await getMasterEdition(mint.publicKey)
-  console.log({ masterEdition })
 
   const rent = await connection.getMinimumBalanceForRentExemption(
     MintLayout.span
   )
-  console.log({ rent, program })
   const result = await program.rpc.mintNft({
     accounts: {
       config,
